@@ -1,0 +1,159 @@
+[gd_scene load_steps=21 format=4 uid="uid://drd1k0p2i4eic"]
+
+[ext_resource type="Texture2D" uid="uid://o723wgpbwcem" path="res://textures/Bricks_texture.png" id="1_h67dt"]
+[ext_resource type="Texture2D" uid="uid://cmhewmc5f676i" path="res://textures/Grass_texture.png" id="1_tj1qe"]
+[ext_resource type="Texture2D" uid="uid://btct33hdinxlh" path="res://textures/Dirt_texture.png" id="2_37vv4"]
+[ext_resource type="Texture2D" uid="uid://np3tlwsyurbr" path="res://textures/Gold_texture.png" id="3_ows0e"]
+[ext_resource type="Texture2D" uid="uid://18q18wdw7ang" path="res://textures/Ice_texture.png" id="4_3u671"]
+[ext_resource type="Texture2D" uid="uid://b0jqqagtlhy0v" path="res://textures/oak_texture.png" id="5_8h45i"]
+[ext_resource type="Texture2D" uid="uid://bqccpm400d6l" path="res://textures/Stone_Bricks_texture.png" id="6_6dfee"]
+[ext_resource type="Texture2D" uid="uid://c2hopscg5glr3" path="res://textures/Stone_texture.png" id="7_3h175"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_531kl"]
+resource_name = "Grass"
+cull_mode = 2
+albedo_color = Color(0, 0.907062, 0.152438, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ecubl"]
+_surfaces = [{
+"aabb": AABB(-1.50114, -1, -0.868, 3.00227, 2, 1.736),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("BgACAAAAAwAAAAIABgABAAIAAwAFAAAABQAGAAAABwABAAYABQAHAAYABAACAAEABAADAAIABwAEAAEABQADAAQABQAEAAcA"),
+"lods": [0.712516, PackedByteArray("AAABAAIAAwAAAAIABAACAAEABAADAAIABAABAAAAAwAFAAAABQAEAAAABQADAAQA")],
+"name": "Grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD//wAAAAD///////8AAHZV/////wAAdlUAAP//AAD//wAA//8AAAAAAAAAAAAAiKr//wAAAACIqgAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cmvom"]
+resource_name = "parallelogram_grass_Cube"
+_surfaces = [{
+"aabb": AABB(-1.50114, -1, -0.868, 3.00227, 2, 1.736),
+"attribute_data": PackedByteArray("/9//f/+f/z//3/8//1//P/+fAAD/n/8//18AAP9f////n/+//5////9f/7//H/9//x//P/9f/z//X/8//5//P/+f/7//X/+//5//f/9f/3//X/9//5//f/+f/3//X/9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("EgACAAAAEgABAAIAAwAEAAUAAwAGAAQABwAIAAkABwAKAAgACwANABMACwAMAA0AFAAPABUAFAAOAA8AEQAWABAAEQAXABYA"),
+"lods": [0.712516, PackedByteArray("AAABAAIAAwAEAAUAAwAGAAQABwAIAAkABwAKAAgACwAMAA0ADgAPABAAEQAOABAA")],
+"material": SubResource("StandardMaterial3D_531kl"),
+"name": "Grass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD//wAA/////////////3ZV//////////8AAP///792Vf//////v/////////+/dlUAAP///792VQAA//9KygAA//8AAErKdlX/////SsoAAAAAAABKygAAAAAAAP+/dlUAAP///7///wAA////v///AAD//4zi////////jOIAAP//AAD//wAAAAAAAP//iKr//wAA//+IqgAAAAD/v4iqAAAAAIziiKr//wAAjOKIqv//AAD//4iqAAAAAP///3//v/9//7//f/+//////////////////////7Pds92z3bPds92z3bPds90AAP9/AAD/fwAA/3+pMakxqTGpMf+//7//v/+//3//vwAA/3+pMakxqTGpMf+//7//v/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ecubl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e65ek"]
+albedo_texture = ExtResource("1_h67dt")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dtnqt"]
+points = PackedVector3Array(1.501, -1, 0.868, -0.499, -1, 0.868, -1.501, -1, -0.868, 0.499, -1, -0.868, 1.501, 1, 0.868, -0.499, 1, 0.868, -1.501, 1, -0.868, 0.499, 1, -0.868)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37vv4"]
+albedo_texture = ExtResource("1_tj1qe")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0pos"]
+albedo_texture = ExtResource("2_37vv4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxdxi"]
+albedo_texture = ExtResource("3_ows0e")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_41gw2"]
+albedo_texture = ExtResource("4_3u671")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1245v"]
+albedo_texture = ExtResource("5_8h45i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88sf6"]
+albedo_texture = ExtResource("6_6dfee")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ild5"]
+albedo_texture = ExtResource("7_3h175")
+
+[node name="grassBlock" type="Node3D"]
+
+[node name="bricks" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_e65ek")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="bricks"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bricks/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="grass" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_37vv4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="grass"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="grass/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="dirt" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_m0pos")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="dirt"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dirt/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="gold" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_wxdxi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="gold"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gold/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="ice" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_41gw2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ice"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ice/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="oak" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_1245v")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="oak"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="oak/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="stone_bricks" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_88sf6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stone_bricks"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stone_bricks/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")
+
+[node name="stone" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cmvom")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_3ild5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stone"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stone/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_dtnqt")

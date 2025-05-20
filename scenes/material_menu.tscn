@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://ccusgg41tvh0b"]
+
+[ext_resource type="Texture2D" uid="uid://o723wgpbwcem" path="res://textures/Bricks_texture.png" id="1_ehxq3"]
+[ext_resource type="Script" uid="uid://beptiqihjilf5" path="res://scripts/MaterialMenu.cs" id="1_p13ah"]
+[ext_resource type="Texture2D" uid="uid://btct33hdinxlh" path="res://textures/Dirt_texture.png" id="2_p13ah"]
+[ext_resource type="Texture2D" uid="uid://np3tlwsyurbr" path="res://textures/Gold_texture.png" id="3_jb6ep"]
+[ext_resource type="Texture2D" uid="uid://cmhewmc5f676i" path="res://textures/Grass_texture.png" id="4_62xx6"]
+[ext_resource type="Texture2D" uid="uid://b0jqqagtlhy0v" path="res://textures/oak_texture.png" id="5_y22v4"]
+[ext_resource type="Texture2D" uid="uid://18q18wdw7ang" path="res://textures/Ice_texture.png" id="6_xflbu"]
+[ext_resource type="Texture2D" uid="uid://c2hopscg5glr3" path="res://textures/Stone_texture.png" id="7_umvn6"]
+[ext_resource type="Texture2D" uid="uid://bqccpm400d6l" path="res://textures/Stone_Bricks_texture.png" id="8_f0j0p"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_p13ah")
+TileNames = Array[String](["Bricks", "Grass", "Dirt", "Gold", "Ice", "Oak", "Stone", "Stone Bricks"])
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="bricksButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_ehxq3")
+
+[node name="grassButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_62xx6")
+
+[node name="dirtButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_p13ah")
+
+[node name="goldButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_jb6ep")
+
+[node name="iceButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("6_xflbu")
+
+[node name="oakButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_y22v4")
+
+[node name="stoneButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_umvn6")
+
+[node name="stoneBricksButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("8_f0j0p")
+
+[node name="Label" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Bricks"
