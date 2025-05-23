@@ -68,6 +68,24 @@ Our project followed a weekly plan, working every Monday from January 6, 2025, t
 
 In total, the team invested **140 hours** over 20 weeks to develop the Paracraft project. This includes tutorial sessions, feature implementation, optimization, and final integration tasks.
 
+## Controls
+
+* **Movement**: Use **W**, **A**, **S**, **D** keys to move.
+* **Jump**: Press **Space** to jump.
+* **Look Around**: Move the mouse to adjust camera and character view.
+* **Destroy Block**: Right-click on a block to destroy it.
+* **Place Block**: Left-click to place the selected material block at the targeted spot.
+* **Change Material**: Press **Tab** to cycle through available block materials.
+* **Pause**: Press **Esc** to pause the game.
+
+## Demo
+
+Watch the game in action by viewing the screen recording below:
+
+<video src="Paracraft/PCFTAssets/paracraft_screenrecord.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your enhancements. Ensure your code adheres to the project's coding standards and includes appropriate documentation.
