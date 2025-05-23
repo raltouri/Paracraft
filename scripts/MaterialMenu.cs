@@ -12,6 +12,7 @@ public partial class MaterialMenu : CanvasLayer
 
 	private HBoxContainer hbox;
 	private Label label;
+	private Control _control;
 
 	public override void _Ready()
 	{
@@ -35,7 +36,9 @@ public partial class MaterialMenu : CanvasLayer
 		}
 
 		UpdateSelectionVisual();
+		
 	}
+	
 
 	public int GetSelectedTileId()
 	{

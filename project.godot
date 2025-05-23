@@ -15,10 +15,6 @@ run/main_scene="uid://cvkrmd0pv32px"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
-
-window/size/mode=2
-
 [dotnet]
 
 project/assembly_name="paracraft"

@@ -11,55 +11,84 @@
 [ext_resource type="Texture2D" uid="uid://bqccpm400d6l" path="res://textures/Stone_Bricks_texture.png" id="8_f0j0p"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
+layer = 0
 script = ExtResource("1_p13ah")
 TileNames = Array[String](["Bricks", "Grass", "Dirt", "Gold", "Ice", "Oak", "Stone", "Stone Bricks"])
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 159.0
+pivot_offset = Vector2(400, 100)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+custom_minimum_size = Vector2(400, 75)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1308.0
+offset_bottom = 190.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+custom_minimum_size = Vector2(800, 75)
 layout_mode = 2
 
 [node name="bricksButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("1_ehxq3")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="grassButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("4_62xx6")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="dirtButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("2_p13ah")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="goldButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("3_jb6ep")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="iceButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("6_xflbu")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="oakButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("5_y22v4")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="stoneButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("7_umvn6")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="stoneBricksButton" type="TextureButton" parent="Control/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = ExtResource("8_f0j0p")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Label" type="Label" parent="Control/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "Bricks"
