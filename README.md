@@ -80,11 +80,9 @@ In total, the team invested **140 hours** over 20 weeks to develop the Paracraft
 
 ## Demo
 
-Watch the game in action by viewing the screen recording below:
+This GIF demonstrates core gameplay: placing blocks, choosing materials, destroying blocks, and moving around.
 
-<video src="Paracraft/PCFTAssets/paracraft_screenrecord.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
+![Gameplay Demo](PCFTAssets/placing_and_destroying.gif)
 
 ## Contributing
 
