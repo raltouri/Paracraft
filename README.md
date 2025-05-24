@@ -25,9 +25,11 @@ Paracraft is an open-source, voxel-based 3D game engine and creative platform in
    git clone https://github.com/raltouri/Paracraft.git
    ```
 
-2. **Open in Godot**: Launch Godot and open the `project.godot` file located in the cloned repository.
+2. **Open in Godot**:
+   Launch Godot and open the `project.godot` file located in the cloned repository.
 
-3. **Build the Project**: Use Godot's build tools to compile and run the project.
+3. **Build the Project**:
+   Use Godot's build tools to compile and run the project.
 
 ## Project Structure
 
@@ -39,7 +41,7 @@ Paracraft is an open-source, voxel-based 3D game engine and creative platform in
 
 ## Project Progress Plan
 
-Our project followed a weekly plan, working every Monday from January 6, 2025, to May 19, 2025, with varied hours around an average of 7 per week.
+Our project followed a weekly plan, working every Monday from January 6, 2025, to May 23, 2025, with varied hours around an average of 7 per week. This plan was inspired by a peer roadmap: [Euclidian Uniform Tessellations](https://github.com/HaifaCSProjects/Euclidian-uniform-tessellations).
 
 | Week | Date         | Hours | Activity                                                                     |
 | ---- | ------------ | ----- | ---------------------------------------------------------------------------- |
@@ -63,10 +65,11 @@ Our project followed a weekly plan, working every Monday from January 6, 2025, t
 | 18   | May 5, 2025  | 8     | Recorded demo video; captured in-game footage for documentation              |
 | 19   | May 12, 2025 | 7     | Polished UI; updated documentation and tutorials                             |
 | 20   | May 19, 2025 | 6     | Final integration; code freeze and repository cleanup                        |
+| 21   | May 23, 2025 | 8     | Final touches; ensured everything works; prepared README file                |
 
 ## Summary
 
-In total, the team invested **140 hours** over 20 weeks to develop the Paracraft project. This includes tutorial sessions, feature implementation, optimization, and final integration tasks.
+In total, the team invested **148 hours** over 21 weeks to develop the Paracraft project. This includes tutorial sessions, feature implementation, optimization, final integration tasks, and final touches.
 
 ## Controls
 
